@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0e1a;
+  --color-surface: #0f1524;
+  --color-surface-dim: #0f1524;
+  --color-surface-bright: #1a2438;
+  --color-surface-container-lowest: #0a0e1a;
+  --color-surface-container-low: #111828;
+  --color-surface-container: #141c2e;
+  --color-surface-container-high: #1a2438;
+  --color-surface-container-highest: #202c42;
+  --color-surface-variant: #1a2438;
+
+  --color-on-surface: #e0e8f0;
+  --color-on-surface-variant: #a0b4c4;
+  --color-inverse-surface: #e0e8f0;
+  --color-inverse-on-surface: #0a0e1a;
+
+  --color-primary: #7dd3fc;
+  --color-primary-container: #0e4d6e;
+  --color-on-primary: #001f2e;
+  --color-on-primary-container: #c8eaff;
+  --color-primary-fixed: #c8eaff;
+  --color-primary-fixed-dim: #7dd3fc;
+
+  --color-secondary: #88b4cc;
+  --color-secondary-container: #1a3a4e;
+  --color-on-secondary: #001f2e;
+  --color-on-secondary-container: #c0d8e8;
+  --color-secondary-fixed: #c0d8e8;
+  --color-secondary-fixed-dim: #88b4cc;
+
+  --color-tertiary: #c8a0f0;
+  --color-tertiary-container: #3d2060;
+  --color-on-tertiary: #1a002e;
+  --color-on-tertiary-container: #e8d0ff;
+  --color-tertiary-fixed: #e8d0ff;
+  --color-tertiary-fixed-dim: #c8a0f0;
+
+  --color-outline: #4a6070;
+  --color-outline-variant: #2a3a48;
+  --color-error: #ff6b6b;
+  --color-error-container: #3d1414;
+  --color-on-error: #1a0000;
+
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: #0a0e1a;
+    color: #e0e8f0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+  }
+}
+
+/* Custom scrollbar hiding and subtle animations */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphic frosted border */
+.glass-border {
+  border: 1px solid rgba(125, 211, 252, 0.1);
+}
+.glass-border-subtle {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.glass-glow-primary {
+  box-shadow: 0 0 30px rgba(125, 211, 252, 0.08);
+}
+
